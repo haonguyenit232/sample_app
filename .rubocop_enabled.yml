@@ -32,7 +32,7 @@ Style/AsciiComments:
   Description: "Use only ascii symbols in comments."
   Enabled: true
 
-Style/AsciiIdentifiers:
+Naming/AsciiIdentifiers:
   Description: "Use only ascii symbols in identifiers."
   Enabled: true
 
@@ -75,7 +75,7 @@ Style/CharacterLiteral:
   Description: "Checks for uses of character literals."
   Enabled: true
 
-Style/ClassAndModuleCamelCase:
+Naming/ClassAndModuleCamelCase:
   Description: "Use CamelCase for classes and modules."
   Enabled: true
 
@@ -113,7 +113,7 @@ Layout/CommentIndentation:
   Description: "Indentation of comments."
   Enabled: true
 
-Style/ConstantName:
+Naming/ConstantName:
   Description: "Constants should use SCREAMING_SNAKE_CASE."
   Enabled: true
 
@@ -185,7 +185,7 @@ Style/EvenOdd:
   Description: "Favor the use of Fixnum#even? && Fixnum#odd?"
   Enabled: true
 
-Style/FileName:
+Naming/FileName:
   Description: "Use snake_case for source file names."
   Enabled: true
 
@@ -276,7 +276,7 @@ Style/MethodDefParentheses:
                  parentheses.
   Enabled: true
 
-Style/MethodName:
+Naming/MethodName:
   Description: "Use the configured style when naming methods."
   Enabled: true
 
@@ -340,7 +340,7 @@ Style/OneLineConditional:
                  if/then/else/end constructs.
   Enabled: true
 
-Style/OpMethod:
+Naming/BinaryOperatorParameter:
   Description: "When defining binary operators, name the argument other."
   Enabled: true
 
@@ -358,7 +358,7 @@ Style/PerlBackrefs:
   Description: "Avoid Perl-style regex back references."
   Enabled: true
 
-Style/PredicateName:
+Naming/PredicateName:
   Description: "Check the names of predicate methods."
   Enabled: true
 
@@ -523,7 +523,7 @@ Layout/TrailingBlankLines:
   Enabled: true
 
 # Style/TrailingComma:
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
   Description: "Checks for trailing comma in parameter lists and literals."
   Enabled: true
 
@@ -555,7 +555,7 @@ Style/VariableInterpolation:
                  directly in strings.
   Enabled: true
 
-Style/VariableName:
+Naming/VariableName:
   Description: "Use the configured style when naming variables."
   Enabled: true
 
@@ -643,12 +643,6 @@ Security:
 
 Lint/HandleExceptions:
   Description: "Don't suppress exception."
-  Enabled: true
-
-Lint/InvalidCharacterLiteral:
-  Description: >-
-                 Checks for invalid character literals with a non-escaped
-                 whitespace character.
   Enabled: true
 
 Lint/LiteralInCondition:
