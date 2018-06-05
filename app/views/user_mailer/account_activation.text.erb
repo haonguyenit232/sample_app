@@ -1,0 +1,5 @@
+<%= t "hello" %>
+<%= @user.name %>,
+<%= t "static_pages.home.title2" %>
+<%= t "user_mailer.check_alert" %>
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
