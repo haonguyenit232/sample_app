@@ -234,7 +234,14 @@ Layout/EmptyLinesAroundModuleBody:
   SupportedStyles:
     - no_empty_lines
 
-Naming/FileName:
+# Checks whether the source file has a utf-8 encoding comment or not
+Style/Encoding:
+  EnforcedStyle: when_needed
+  SupportedStyles:
+    - when_needed
+    - always
+
+Style/FileName:
   Exclude:
     - '**/Rakefile'
     - '**/Gemfile'
@@ -270,8 +277,8 @@ Style/HashSyntax:
     - ruby19
     - hash_rockets
 
-Metrics/LineLength:
-  Max: 80
+Style/IfUnlessModifier:
+  MaxLineLength: 80
 
 # Checks the indentation of the first key in a hash literal.
 Layout/IndentHash:
@@ -332,7 +339,7 @@ Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 10
 
-Naming/MethodName:
+Style/MethodName:
   EnforcedStyle: snake_case
   SupportedStyles:
     - snake_case
@@ -361,7 +368,7 @@ Style/PercentLiteralDelimiters:
     '%W': ()
     '%x': ()
 
-Naming/PredicateName:
+Style/PredicateName:
   NamePrefixBlacklist:
     - get_
 
@@ -446,7 +453,7 @@ Layout/TrailingBlankLines:
     - final_newline
     - final_blank_line
 
-Style/TrailingCommaInArrayLiteral:
+Style/TrailingCommaInLiteral:
   # If `comma`, the cop requires a comma after the last item in an array or
   # hash, but only when each item is on its own line.
   # If `consistent_comma`, the cop requires a comma after the last item of all
@@ -490,11 +497,14 @@ Style/TrivialAccessors:
     - to_s
     - to_sym
 
-Naming/VariableName:
+Style/VariableName:
   EnforcedStyle: snake_case
   SupportedStyles:
     - snake_case
     - camelCase
+
+Style/WhileUntilModifier:
+  MaxLineLength: 80
 
 Style/WordArray:
   MinSize: 0
