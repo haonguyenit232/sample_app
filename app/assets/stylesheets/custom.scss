@@ -1,6 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-/* universal */
+ /* universal */
 
 body {
   padding-top: 60px;
@@ -21,7 +21,7 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
-/* typography */
+ /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -47,7 +47,7 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
-/* header */
+ /* header */
 
 #logo {
   float: left;
@@ -95,16 +95,14 @@ footer ul li {
   margin-left: 15px;
 }
 
-/* mixins, variables, etc. */
-
+ /* mixins, variables, etc. */
 $gray-medium-light: #eaeaea;
-
 @mixin box_sizing {
-  -moz-box-sizing:    border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+  box-sizing: border-box;
 }
-/* miscellaneous */
+ /* miscellaneous */
 
 .debug_dump {
   clear: both;
@@ -113,7 +111,7 @@ $gray-medium-light: #eaeaea;
   margin-top: 45px;
   @include box_sizing;
 }
-/* sidebar */
+ /* sidebar */
 
 aside {
   section.user_info {
@@ -149,7 +147,7 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
-/* forms */
+ /* forms */
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
@@ -161,7 +159,7 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
-/* forms */
+ /* forms */
 #error_explanation {
   color: red;
   ul {
