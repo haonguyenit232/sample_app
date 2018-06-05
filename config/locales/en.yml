@@ -1,51 +1,99 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
-  title_home: "Welcome to the Sample App"
-  this_is: "This is the home page for the"
-  this_issame: "This is the sample application for the tutorial."
-  same: "sample application."
-  ruby: "Ruby on Rails Tutorial"
-  ruby_on: "Ruby on Rails"
-  about: "About"
-  screencast: "screencast series"
-  to_teach: "to teach web development with"
-  book: "Book"
-  and: "and"
-  contact: "Contact"
-  contact_the: " Contact the Ruby on Rails Tutorial about the sample app at the"
-  contact_page: "contact page"
-  help: "Help"
-  get_help: "Get help on the Ruby on Rails Tutorial at the"
-  rails_help: "Rails Tutorial help section"
-  to_get_help: "To get help on this sample app, see the"
+  app_name: "Sample App"
+  sub_title: "Ruby on Rails Tutorial Sample App"
+  tuts: "Ruby on Rails Tutorial"
+  author: "Michael Hartl"
+  name: Name
+  email: Email
+  password: Password
+  submit: "Save changes"
+  login: "Please log in"
+  the: "The"
+  footer_content1: "The "
+  footer_content2: "by "
+  footer_link3: "About"
+  footer_link4: "Contact"
+  footer_link5: "News"
+  static_pages:
+    home:
+      header: "Welcome to the Sample App"
+      title: "Home"
+      content1: "This is the home page for the"
+      link1: "Ruby on Rails Tutorial"
+      content2: "sample application."
+      link2: "Sign up now!"
+      logo_alt: "Rails logo"
+    help:
+      title: "Help"
+      header: "Help"
+      content1: "Get help on the Ruby on Rails Tutorial at the "
+      link1: "Rails Tutorial help section"
+      content2: "To get help on this sample app, see the "
+      link2: "Ruby on Rails Tutorial book"
+    about:
+      title: "About"
+      header: "About"
+      content1: "The"
+      link1: "Ruby on Rails Tutorial"
+      content2: " is a"
+      link2: "book"
+      content3: " and"
+      link3: "screencast series"
+      content4: "to teach web development with"
+      link4: "Ruby on Rails"
+      content5: "This is the sample application for the tutorial."
+    contact:
+      title: "Contact"
+      header: "Contact"
+      content1: "Contact the Ruby on Rails Tutorial about the sample app at the "
+      link1: "contact page"
+  layouts:
+    header:
+      app_name22: "Sample App"
+      home: "Home"
+      Help: "Help"
+      login: "Login"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      account: "Account"
+    footer:
+      pre: "The"
+      sub: "by"
+      new: "New"
+  users:
+    index:
+      title: "All users"
+      delete: "Delete"
+      comfirm: "You sure?"
+      destroy: "User Deleted"
+    new:
+      form_err_msg1: "The form contains "
+      title: "Sign up"
+      confirm: "Confirm Password"
+      create: "Create my account"
+      change: "Change"
+    edit:
+      title: "Edit"
+      Update2: "Update your profile"
+      updated: "Profile updated"
+    destroy:
+      user_deleted_msg: "User deleted"
+      user_delete_err_msg: "Are you trying to delete the void?"
+  shared:
+    error_messages:
+      p_1: "The form contains"
+  sessions:
+    new:
+      title: "Log in"
+      register: "New user?"
+      signup: "Sign up now!"
+  shared:
+    error_messages:
+      p_1: "The form contains"
+  sessions:
+    new:
+      title: "Log in"
+      remember_me: "Remember me on this computer"
+    fail: "Invalid email/password combination"

@@ -1,6 +1,6 @@
-<% provide(:title, "Contact") %>
-<h1><%= t "contact"%></h1>
+<% provide :title, t(".title") %>
+<h1><%= t ".header" %></h1>
 <p>
-  <%= t "contact_the"%>
-  <a href="http://www.railstutorial.org/contact"><%= t "contact_page"%></a>.
+  <%= t ".content1" %>
+  <%= link_to t(".link1"), "http://www.railstutorial.org/contact"%>.
 </p>

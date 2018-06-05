@@ -1,9 +1,8 @@
-<% provide(:title, "Help") %>
-<h1><%= t "help" %></h1>
+<% provide :title, t(".title") %>
+<h1><%= t ".header" %></h1>
 <p>
-  <%= t "get_help"%>
-  <a href="http://www.railstutorial.org/help"><%= t "rails_help"%></a>.
-  <%= t "To get help on this sample app, see the"%>
-  <a href="http://www.railstutorial.org/book"><em><%= t "ruby"%></em>
-    <%= t "book"%></a>.
-  </p>
+  <%= t ".content1" %>
+  <%= link_to t(".link1"), "http://www.railstutorial.org/help" %>.
+  <%= t ".content2" %>
+  <em><%= link_to t(".link2"), "http://www.railstutorial.org/book"%></em>.
+</p>
