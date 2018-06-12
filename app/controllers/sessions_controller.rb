@@ -5,9 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     if @user && @user.authenticate(params[:session][:password])
-      log_in @user
-      params[:session][:remember_me] == Settings.checkbox_true ? remember(@user) : forget(@user)
-      redirect_to @user
+      user_actived @user
     else
       flash.now[:danger] = t "sessions.fail"
       render :new

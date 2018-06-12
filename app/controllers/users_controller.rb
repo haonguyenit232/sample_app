@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.activated.paginate page: params[:page]
   end
 
   def new
@@ -17,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "static_pages.home.title"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "user_mailer.check_alert"
+      redirect_to root_url
     else
       render :new
     end
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
     if @user.destroy
       flash[:success] = t ".user_deleted_msg"
     else
-      flash[:success] = t ".user_delete_err_msg"
+      flash[:danger] = t ".user_delete_err_msg"
     end
     redirect_to users_url
   end

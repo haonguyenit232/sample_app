@@ -1,0 +1,4 @@
+<h1><%= t "app_name" %></h1>
+<p><%= t ".email_hi", user_name: @user.name %>,</p>
+<p> <%= t "static_pages.home.title2" %> <%= t "user_mailer.check_alert" %> </p>
+<%= link_to t("user_mailer.active_link"), edit_account_activation_url(@user.activation_token, email: @user.email) %>
