@@ -1,0 +1,5 @@
+<% load_current_user %>
+<div class="stats">
+  <%= link_to "#{@user.following.size} following", following_user_path(@user), class: "follow-link" %>
+  <%= link_to "#{@user.followers.size} follower", followers_user_path(@user), class: "follow-link" %>
+</div>
