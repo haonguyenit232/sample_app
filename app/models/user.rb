@@ -57,10 +57,10 @@ class User < ApplicationRecord
     UserMailer.account_activation(self).deliver_now
   end
 
-  def create_reset_digest
+  =begindef create_reset_digest
     self.reset_token = User.new_token
     update_attributes reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
-  end
+  end=end
 
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
